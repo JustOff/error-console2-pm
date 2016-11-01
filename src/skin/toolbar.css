@@ -1,0 +1,5 @@
+/* :::::::: main toolbar icon ::::::::::::::: */
+
+#console2-button {
+	list-style-image: url("chrome://global/skin/icons/error-16.png");
+}

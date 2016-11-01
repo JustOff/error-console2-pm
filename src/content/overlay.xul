@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://econsole2/skin/toolbar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://econsole2/skin/listheader.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://econsole2/locale/console2.dtd">
+
+<overlay id="console2Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript"><![CDATA[
+		function toErrorConsole()
+		{
+			toOpenWindowByType("global:console", "chrome://econsole2/content/console2.xul");
+		}
+	]]></script>
+
+	<broadcasterset id="mainBroadcasterSet">
+		<broadcaster id="viewConsole2Sidebar" autoCheck="false" label="&console.title;" type="checkbox" group="sidebar" sidebarurl="chrome://econsole2/content/console2.xul" oncommand="toggleSidebar('viewConsole2Sidebar');"/>
+	</broadcasterset>
+
+	<broadcasterset id="composeBroadcasters">
+		<broadcaster id="viewConsole2Sidebar" autoCheck="false" label="&console.title;" type="checkbox" group="sidebar" sidebarurl="chrome://econsole2/content/console2.xul" oncommand="toggleSidebar('viewConsole2Sidebar');"/>
+	</broadcasterset>
+
+	<toolbarpalette id="BrowserToolbarPalette"> <!-- Toolbar -->
+		<toolbarbutton id="console2-button" class="toolbarbutton-1 chromeclass-toolbar-additional" label="&console.title;" tooltiptext="&console.tooltiptext;" oncommand="if (event.shiftKey) toggleSidebar('viewConsole2Sidebar'); else toErrorConsole();" onclick="if (event.button == 1) toggleSidebar('viewConsole2Sidebar');"/>
+	</toolbarpalette>
+
+	<!-- WebDeveloper Menu -->
+	<menuitem id="javascriptConsole" label="&console.title;" key="key_errorConsole" oncommand="toErrorConsole();" hidden="false"/>
+	<menupopup id="appmenu_webDeveloper_popup">
+		<menuitem id="appmenu_errorConsole" label="&console.title;" key="key_errorConsole" oncommand="toErrorConsole()"/>
+	</menupopup>
+
+	<!-- SideBar Menu -->
+	<menupopup id="viewSidebarMenu">
+		<menuitem accesskey="&console.accesskey;" observes="viewConsole2Sidebar"/>
+	</menupopup>
+
+	<!-- Accelerator Key -->
+	<keyset id="mainKeyset">
+		<key id="key_errorConsole" key="&console.key;" oncommand="toErrorConsole();" modifiers="accel,shift"/>
+	</keyset>
+	
+	<!-- Command -->
+	<command id="Tools:ErrorConsole" oncommand="toErrorConsole()" hidden="false"/>
+
+</overlay>
