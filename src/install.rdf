@@ -2,7 +2,7 @@
 <RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.mozilla.org/2004/em-rdf#">
 	<RDF:Description about="urn:mozilla:install-manifest">
 		<id>ErrorConsole2@Off.JustOff</id>
-		<version>1.0.3</version>
+		<version>1.0.4</version>
 		<type>2</type>
 		<name>Error Console²</name>
 		<description>Extended Error Console for Pale Moon</description>

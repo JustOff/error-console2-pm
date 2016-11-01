@@ -3,9 +3,12 @@ content	econsole2 content/
 locale econsole2 en-US locale/en-US/
 
 skin econsole2 classic/1.0 skin/
+skin econsole2-os classic/1.0 skin/winnt/ os=WINNT
+skin econsole2-os classic/1.0 skin/darwin/ os=Darwin
+skin econsole2-os classic/1.0 skin/unix/ os=Linux
 
 overlay chrome://browser/content/browser.xul chrome://econsole2/content/overlay.xul
 override chrome://global/content/console.xul chrome://econsole2/content/console2.xul
 
-style chrome://global/content/customizeToolbar.xul chrome://econsole2/skin/console-toolbar.css
+style chrome://global/content/customizeToolbar.xul chrome://econsole2-os/skin/console-toolbar.css
 style chrome://global/content/customizeToolbar.xul chrome://econsole2/skin/toolbar.css

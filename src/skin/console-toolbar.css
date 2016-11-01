@@ -1,4 +1,4 @@
-/* :::::::: toolbar icons ::::::::::::::: */
+/* :::::::: toolbar buttons ::::::::::::::: */
 
 toolbar toolbarbutton:not([type="menu"]):not([class~="textonly"]) .toolbarbutton-text {
 	-moz-margin-start: 4px !important;
@@ -17,71 +17,6 @@ toolbar[mode="icons"] > toolbaritem > .textonly > .toolbarbutton-text,
 toolbar[mode="icons"] toolbarpaletteitem > toolbaritem > .textonly > .toolbarbutton-text,
 toolbar[mode="icons"] toolbarpaletteitem > .textonly > .toolbarbutton-text {
 	display: -moz-box;
-}
-
-#item_modeAll,
-#item_modeErrors,
-#item_modeWarnings,
-#item_modeMessages,
-#item_clearConsole {
-	list-style-image: url("chrome://global/skin/console/console-toolbar.png");
-}
-
-#item_modeAll {
-	-moz-image-region: rect(0px 24px 24px 0px);
-}
-#item_modeAll:hover {
-	-moz-image-region: rect(24px 24px 48px 0px);
-}
-
-#item_modeErrors {
-	-moz-image-region: rect(0px 96px 24px 72px);
-}
-#item_modeErrors:hover,
-#item_modeErrors[checked="true"] {
-	-moz-image-region: rect(24px 96px 48px 72px);
-}
-
-#item_modeWarnings {
-	-moz-image-region: rect(0px 72px 24px 48px);
-}
-#item_modeWarnings:hover,
-#item_modeWarnings[checked="true"] {
-	-moz-image-region: rect(24px 72px 48px 48px);
-}
-
-#item_modeMessages {
-	-moz-image-region: rect(0px 48px 24px 24px);
-}
-#item_modeMessages:hover,
-#item_modeMessages[checked="true"] {
-	-moz-image-region: rect(24px 48px 48px 24px);
-}
-
-#item_clearConsole {
-	-moz-image-region: rect(0px 120px 24px 96px);
-}
-#item_clearConsole:hover {
-	-moz-image-region: rect(24px 120px 48px 96px);
-}
-
-toolbar[iconsize="small"] toolbarbutton[id="item_modeAll"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeAll"]:hover .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeAll"][checked="true"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeErrors"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeErrors"]:hover .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeErrors"][checked="true"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeWarnings"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeWarnings"]:hover .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeWarnings"][checked="true"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeMessages"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeMessages"]:hover .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_modeMessages"][checked="true"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_clearConsole"] .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_clearConsole"]:hover .toolbarbutton-icon, 
-toolbar[iconsize="small"] toolbarbutton[id="item_clearConsole"][checked="true"] .toolbarbutton-icon {
-   height:16px;
-   width:16px;
 }
 
 #item_modeLangCSS {

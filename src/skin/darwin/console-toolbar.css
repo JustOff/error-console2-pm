@@ -1,0 +1,23 @@
+@import url(chrome://econsole2/skin/console-toolbar.css);
+
+/* :::::::: toolbar icons osx ::::::::::::::: */
+
+#item_modeAll {
+	list-style-image: url("chrome://econsole2/skin/darwin/console.png");
+}
+
+#item_modeErrors {
+	list-style-image: url("chrome://global/skin/icons/error-16.png");
+}
+
+#item_modeWarnings {
+	list-style-image: url("chrome://global/skin/icons/warning-16.png");
+}
+
+#item_modeMessages {
+	list-style-image: url("chrome://global/skin/icons/information-16.png");
+}
+
+#item_clearConsole {
+	list-style-image: url("chrome://econsole2/skin/darwin/clear.png");
+}

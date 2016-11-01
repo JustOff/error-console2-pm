@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://econsole2/skin/console2.css" type="text/css"?>
-<?xml-stylesheet href="chrome://econsole2/skin/console-toolbar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://econsole2-os/skin/console-toolbar.css" type="text/css"?>
 <?xml-stylesheet href="chrome://econsole2/content/console2.css" type="text/css"?>
 
 <!DOCTYPE window [

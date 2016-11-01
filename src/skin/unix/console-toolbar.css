@@ -1,0 +1,23 @@
+@import url(chrome://econsole2/skin/console-toolbar.css);
+
+/* :::::::: toolbar icons unix ::::::::::::::: */
+
+#item_modeAll {
+	list-style-image: url("chrome://global/skin/console/console-toolbar.png");
+}
+
+#item_modeErrors {
+	list-style-image: url("moz-icon://stock/gtk-dialog-error?size=toolbar");
+}
+
+#item_modeWarnings {
+	list-style-image: url("moz-icon://stock/gtk-dialog-warning?size=toolbar");
+}
+
+#item_modeMessages {
+	list-style-image: url("moz-icon://stock/gtk-dialog-info?size=toolbar");
+}
+
+#item_clearConsole {
+	list-style-image: url("moz-icon://stock/gtk-clear?size=toolbar");
+}
