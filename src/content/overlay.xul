@@ -36,9 +36,9 @@
 	</menupopup>
 
 	<!-- Accelerator Key -->
-	<keyset id="mainKeyset">
+	<!-- keyset id="mainKeyset">
 		<key id="key_errorConsole" key="&console.key;" oncommand="toErrorConsole();" modifiers="accel,shift"/>
-	</keyset>
+	</keyset -->
 	
 	<!-- Command -->
 	<command id="Tools:ErrorConsole" oncommand="toErrorConsole()" hidden="false"/>
